@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mohamed Ayman Khalifa</title>
-<meta name="description" content="Mohamed Ayman Khalifa: builder and operator. 13+ years launching and scaling businesses from zero across delivery, SaaS, cloud kitchens, grocery e-commerce, marketplaces and oil & gas in Egypt and the UAE.">
-<meta property="og:title" content="Mohamed Ayman Khalifa · Hustler by nature. Builder by instinct.">
-<meta property="og:description" content="Ask me anything: 6 industries, 4 zero-to-one launches, 260+ people led, and a live SaaS I built myself.">
+<meta name="description" content="Mohamed Ayman Khalifa: builder and entrepreneur. 13+ years launching and scaling businesses from zero across delivery, SaaS, cloud kitchens, grocery e-commerce, marketplaces and oil & gas in Egypt and the UAE.">
+<meta property="og:title" content="Mohamed Ayman Khalifa · Builder by nature. Hustler by instinct.">
+<meta property="og:description" content="Ask me anything: 6 industries, 4 zero-to-one launches, 320+ people led, and a live SaaS I built myself.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://m-ayman-kh.github.io/">
 <meta property="og:image" content="https://m-ayman-kh.github.io/img/khalifa.jpg">
@@ -80,7 +80,7 @@ a{color:inherit}
 .status{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#cfe0d6;background:rgba(255,255,255,.06);border:1px solid var(--line-d);padding:6px 12px;border-radius:999px;width:max-content;max-width:100%}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(47,227,138,.6);animation:pulse 2s infinite;flex:none}
 @keyframes pulse{70%{box-shadow:0 0 0 8px rgba(47,227,138,0)}100%{box-shadow:0 0 0 0 rgba(47,227,138,0)}}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.facts{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .facts div{background:rgba(255,255,255,.04);border:1px solid var(--line-d);border-radius:14px;padding:12px}
 .facts small{display:block;font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:4px}
 .facts b{display:block;font-size:22px;letter-spacing:-.02em;color:#fff}
@@ -191,6 +191,8 @@ h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.1;margin:0
 .kpi{background:#f0f7f2;border:1px solid #d6ecdd;border-radius:12px;padding:10px 12px}
 .kpi b{display:block;font-size:24px;letter-spacing:-.03em;line-height:1.15;color:#0a3d24}
 .kpi span{font-size:13px;color:#3e5247;line-height:1.3;display:block}
+.kpi .nw{display:inline;white-space:nowrap}
+.flag{width:21px;height:14px;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.14);vertical-align:-1px;margin-right:8px}
 .rcard ul{margin:0;padding-left:18px;color:#2e3b34;font-size:15px}
 .rcard li{margin:3px 0}
 .rcard .sum{margin:0;color:#2e3b34;font-size:15.5px;max-width:680px}
@@ -200,14 +202,14 @@ h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.1;margin:0
 .projects{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .pgrid{display:grid;grid-template-columns:1fr;gap:16px}
 @media(min-width:700px){.pgrid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1040px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1040px){.pgrid{grid-template-columns:repeat(4,1fr)}}
 .proj{border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:8px;background:var(--paper);min-width:0}
 .proj.feature{background:var(--ink);color:var(--txt-d);border-color:var(--ink)}
-@media(min-width:700px){.proj.feature{grid-column:span 2}}
+@media(min-width:700px){.proj.feature{grid-column:1/-1}}
 .proj h3{margin:0;font-size:19px;letter-spacing:-.02em}
 .proj p{margin:0;font-size:15px;color:var(--mut)}
 .proj.feature p{color:#c6d4cc}
-.ptag{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-dk)}
+.ptag{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.02em;color:var(--green-dk)}
 .proj.feature .ptag{color:var(--green)}
 .plink{margin-top:auto;padding-top:8px;font-weight:600;font-size:14.5px;color:var(--green-dk);text-decoration:none}
 .plink:hover{text-decoration:underline}
@@ -216,8 +218,10 @@ h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.1;margin:0
 
 /* Skills */
 .sk-grid{display:grid;grid-template-columns:1fr;gap:16px}
-.sk-side{display:flex;flex-direction:column;gap:16px;min-width:0}
-@media(min-width:900px){.sk-grid{grid-template-columns:1.4fr 1fr}}
+@media(min-width:900px){.sk-grid{grid-template-columns:repeat(3,1fr)}}
+.edu-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:700px){.edu-grid{grid-template-columns:repeat(2,1fr)}}
+.edu-sec{background:#fff;border-top:1px solid var(--line)}
 .box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;min-width:0}
 .box h3{margin:0 0 12px;font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut)}
 .box h3:not(:first-child){margin-top:22px}
@@ -243,6 +247,9 @@ h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.1;margin:0
 .ask-card img{width:96px;height:96px;border-radius:50%;object-fit:cover;flex:none;border:3px solid rgba(47,227,138,.5)}
 .ask-card p{margin:0;color:#c6d4cc;font-size:15px}
 .ask-card p b{color:#fff;display:block;font-size:18px;margin-bottom:4px}
+.ask-card img.qr{width:72px;height:72px;margin-left:auto;background:#fff;padding:6px;border:0;border-radius:10px;object-fit:contain;box-sizing:border-box}
+@media(max-width:559px){.ask-card img.qr{display:none}}
+@media(min-width:900px) and (max-width:1099px){.ask-card img:not(.qr){width:72px;height:72px}}
 .socials{display:flex;gap:14px;margin-top:10px;flex-wrap:wrap}
 .socials a{color:var(--green);font-weight:600;font-size:14px;text-decoration:none}
 .socials a:hover{text-decoration:underline}
@@ -310,7 +317,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
 
 /* FLO feature card: bullets + animated map */
 .proj.flo{display:grid;grid-template-columns:1fr;gap:20px;padding:22px}
-@media(min-width:860px){.proj.flo{grid-template-columns:1fr 1.05fr;align-items:stretch}}
+@media(min-width:860px){.proj.flo{grid-template-columns:2fr 3fr;align-items:center;gap:32px;padding:32px}.flo-viz{aspect-ratio:3/2}}
 .flo-text{display:flex;flex-direction:column;gap:10px;min-width:0}
 .flo-list{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
 .flo-list li{position:relative;padding-left:20px;color:#d6e2db;font-size:15px}
@@ -349,6 +356,8 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
       <div class="nav-links">
         <a class="txt" href="#experience">Experience</a>
         <a class="txt" href="#build">Projects</a>
+        <a class="txt" href="#skills">Toolkit</a>
+        <a class="txt" href="#education">Education</a>
         <a class="txt" href="#contact">Contact</a>
         <a class="btn btn-green" href="resume/Mohamed_Khalifa_Resume.pdf" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
@@ -361,21 +370,14 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
       <aside class="me" aria-label="About Mohamed">
         <div class="portrait">
           <img src="img/khalifa-portrait.jpg" width="384" height="512" alt="Mohamed Ayman Khalifa">
-          <div class="tag"><strong>Mohamed Ayman Khalifa</strong><span>Builder &amp; operator</span></div>
+          <div class="tag"><strong>Mohamed Ayman Khalifa</strong><span>Builder &amp; entrepreneur</span></div>
         </div>
-        <div class="mob-name"><strong>Mohamed Ayman Khalifa</strong><span>Builder &amp; operator</span></div>
+        <div class="mob-name"><strong>Mohamed Ayman Khalifa</strong><span>Builder &amp; entrepreneur</span></div>
         <span class="status"><span class="dot" aria-hidden="true"></span>Open to leadership roles &amp; ventures</span>
         <div class="facts">
           <div><b>6</b><span>industries, one playbook</span></div>
           <div><b>4×</b><span>zero-to-one launches</span></div>
-          <div><b>1</b><span>live SaaS, built myself</span></div>
-        </div>
-        <div class="hero-ctas">
-          <a class="btn btn-green" href="resume/Mohamed_Khalifa_Resume.pdf" download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
-            Download resume
-          </a>
-          <a class="btn btn-ghost" href="mailto:m.ayman.kh@gmail.com">Email me</a>
+          <div><b>320+</b><span>people led</span></div>
         </div>
       </aside>
 
@@ -388,7 +390,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         <div class="log" id="log" aria-live="polite">
           <div class="row">
             <img class="av" src="img/khalifa-square.jpg" width="512" height="512" alt="" aria-hidden="true">
-            <h1 class="bubble greet" id="greet">Hustler by nature. <span class="g">Builder by instinct.</span></h1>
+            <h1 class="bubble greet" id="greet">Builder by nature. <span class="g">Hustler by instinct.</span></h1>
           </div>
         </div>
         <div class="chips-wrap">
@@ -403,10 +405,8 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
           </div>
           <p class="chips-label" style="margin-top:14px">Just for fun:</p>
           <div class="chips fun">
-            <button class="chip" type="button" data-q="island">Deserted island. Who's coming?</button>
             <button class="chip" type="button" data-q="future">What would 5-years-older you say?</button>
             <button class="chip" type="button" data-q="week">What does your week look like?</button>
-            <button class="chip" type="button" data-q="life">The answer to life, the universe and everything?</button>
           </div>
         </div>
       </div>
@@ -433,8 +433,6 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <p class="rtitle">Market Launcher</p>
             <div class="kpis">
               <div class="kpi"><b>0 → 1</b><span>launching Yaga in Egypt from zero</span></div>
-              <div class="kpi"><b>2-sided</b><span>sellers and buyers, built at the same time</span></div>
-              <div class="kpi"><b>E2E</b><span>payments, logistics &amp; CX set up from scratch</span></div>
             </div>
             <button class="ask-role" type="button" data-ask="yaga" aria-expanded="false">Ask me about Yaga</button>
             <div class="rmore" hidden></div>
@@ -447,10 +445,10 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <div class="rhead"><div class="rname"><h3>Zahran</h3><span class="sector">Grocery &amp; retail e-commerce</span></div><img class="logo" src="img/logos/zahran.jpg" width="100" height="100" alt="Zahran logo"></div>
             <p class="rtitle">Director of E-Commerce <span class="arrow">→ promoted to</span> Director of Supply Chain</p>
             <div class="kpis">
-              <div class="kpi"><b>+34%</b><span>GMV year over year</span></div>
-              <div class="kpi"><b>+31%</b><span>app downloads month over month</span></div>
+              <div class="kpi"><b>+34%</b><span>GMV YoY</span></div>
+              <div class="kpi"><b>+31%</b><span>app downloads MoM</span></div>
               <div class="kpi"><b>11%</b><span>of online sales via the new app in 6 months</span></div>
-              <div class="kpi"><b>27</b><span>branches + a distribution center</span></div>
+              <div class="kpi"><b>27</b><span>branches + distribution center</span></div>
             </div>
             <button class="ask-role" type="button" data-ask="zahran" aria-expanded="false">Ask me about Zahran</button>
             <div class="rmore" hidden></div>
@@ -463,10 +461,10 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <div class="rhead"><div class="rname"><h3>The Food Lab</h3><span class="sector">Cloud kitchens</span></div><img class="logo" src="img/logos/foodlab.jpg?v=2" width="100" height="100" alt="The Food Lab logo"></div>
             <p class="rtitle">Head of Operations <span class="arrow">→ promoted to</span> Director of Operations</p>
             <div class="kpis">
-              <div class="kpi"><b>1 → 5</b><span>garage kitchen to 5 cloud kitchens + central production</span></div>
+              <div class="kpi"><b>1 → 5</b><span>scaled to 5 cloud kitchens <span class="nw">+ central production</span></span></div>
               <div class="kpi"><b>−28%</b><span>procurement &amp; waste costs</span></div>
-              <div class="kpi"><b>19</b><span>brands on my SOPs</span></div>
-              <div class="kpi"><b>260+</b><span>people led</span></div>
+              <div class="kpi"><b>29</b><span>brands on my SOPs</span></div>
+              <div class="kpi"><b>320+</b><span>people led</span></div>
             </div>
             <button class="ask-role" type="button" data-ask="foodlab" aria-expanded="false">Ask me about The Food Lab</button>
             <div class="rmore" hidden></div>
@@ -480,7 +478,8 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <p class="rtitle">Country General Manager</p>
             <div class="kpis">
               <div class="kpi"><b>0 → 1</b><span>launched Foodics in Egypt</span></div>
-              <div class="kpi"><b>200+</b><span>stores acquired in three quarters</span></div>
+              <div class="kpi"><b>200+</b><span>stores signed in three quarters</span></div>
+              <div class="kpi"><b>23</b><span>people led</span></div>
             </div>
             <button class="ask-role" type="button" data-ask="foodics" aria-expanded="false">Ask me about Foodics</button>
             <div class="rmore" hidden></div>
@@ -490,7 +489,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         <li class="role">
           <div class="when"><b>Jul 2019 – May 2020</b></div>
           <article class="rcard">
-            <div class="rhead"><div class="rname"><h3>Glovo</h3><span class="sector">Last-mile delivery marketplace</span></div><img class="logo" src="img/logos/glovo.jpg" width="100" height="100" alt="Glovo logo"></div>
+            <div class="rhead"><div class="rname"><h3>Glovo</h3><span class="sector">Last-mile delivery aggregator</span></div><img class="logo" src="img/logos/glovo.jpg" width="100" height="100" alt="Glovo logo"></div>
             <p class="rtitle">Country Operations Manager</p>
             <div class="kpis">
               <div class="kpi"><b>−38%</b><span>cost per order</span></div>
@@ -511,6 +510,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <div class="kpis">
               <div class="kpi"><b>60+</b><span>frac, sand-control &amp; stimulation jobs</span></div>
               <div class="kpi"><b>~70%</b><span>recovery on disputed debts</span></div>
+              <div class="kpi"><b>SandTrap</b><span>new technology taken to market</span></div>
             </div>
             <button class="ask-role" type="button" data-ask="halliburton" aria-expanded="false">Ask me about Halliburton</button>
             <div class="rmore" hidden></div>
@@ -544,10 +544,10 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <span class="ptag">Live · B2B SaaS · AI</span>
             <h3>FLO: fleet management</h3>
             <ul class="flo-list">
-              <li>Company cars and middle-mile trucks, one engine</li>
-              <li>Assigns the right vehicle and driver by itself</li>
-              <li>Live GPS, proof of delivery, Telegram driver bot</li>
-              <li>AI learns your dispatch habits, then runs on autopilot</li>
+              <li>One platform for company cars and middle-mile trucks</li>
+              <li>Smart vehicle and driver assignment</li>
+              <li>Tracks every trip live, with proof of delivery</li>
+              <li>AI that earns autopilot</li>
             </ul>
             <a class="plink" href="https://fleet.flo.deno.net/" target="_blank" rel="noopener">Open FLO →</a>
           </div>
@@ -599,18 +599,6 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
           </div>
         </article>
         <article class="proj">
-          <span class="ptag">Private tool</span>
-          <h3>EGX Desk</h3>
-          <p>A private real-time trading desk for the Egyptian Exchange: briefs, scans, valuation, calendars, journal.</p>
-          <span class="plink muted">Private</span>
-        </article>
-        <article class="proj">
-          <span class="ptag">Venture in validation</span>
-          <h3>Date Mate (Ard AlKhairat)</h3>
-          <p>A date-sugar brand: Egyptian sourcing, own label, export to the US first.</p>
-          <span class="plink muted">Details on request</span>
-        </article>
-        <article class="proj">
           <span class="ptag">Civic · free</span>
           <h3>El Nozha Parking Map</h3>
           <p>A free bilingual QR-code parking map for a Cairo district.</p>
@@ -641,37 +629,49 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
   <section id="skills">
     <div class="wrap">
       <p class="eyebrow">Toolkit</p>
-      <h2>Skills &amp; education</h2>
+      <h2>Skills</h2>
       <div class="sk-grid" style="margin-top:28px">
         <div class="box">
           <h3>Leadership</h3>
           <div class="pills">
-            <span class="pill">P&amp;L ownership</span><span class="pill">Go-to-market</span><span class="pill">Digital transformation</span><span class="pill">Agile operating frameworks</span>
-          </div>
-          <h3>Operations</h3>
-          <div class="pills">
-            <span class="pill">Supply chain</span><span class="pill">E-commerce &amp; fulfillment</span><span class="pill">Last-mile delivery</span><span class="pill">Unit economics</span><span class="pill">Customer experience</span><span class="pill">Process engineering</span>
-          </div>
-          <h3>Tech &amp; data</h3>
-          <div class="pills">
-            <span class="pill">Python</span><span class="pill">R</span><span class="pill">SQL</span><span class="pill">Machine learning</span><span class="pill">Tableau</span><span class="pill">AI tools &amp; agents</span>
+            <span class="pill">P&amp;L ownership</span><span class="pill">Go-to-market</span><span class="pill">Digital transformation</span><span class="pill">Agile frameworks</span><span class="pill">Team building</span><span class="pill">Cross-functional leadership</span>
           </div>
         </div>
-        <div class="sk-side">
+        <div class="box">
+          <h3>Operations</h3>
+          <div class="pills">
+            <span class="pill">Supply chain</span><span class="pill">E-commerce &amp; fulfillment</span><span class="pill">Last-mile delivery</span><span class="pill">SaaS</span><span class="pill">Unit economics</span><span class="pill">Customer experience</span><span class="pill">Process engineering</span>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Tech &amp; data</h3>
+          <div class="pills">
+            <span class="pill">AI tools &amp; agents</span>
+            <span class="pill">Python</span><span class="pill">R</span><span class="pill">SQL</span><span class="pill">Machine learning</span><span class="pill">Tableau</span><span class="pill">Google Workspace</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-sec" id="education">
+    <div class="wrap">
+      <p class="eyebrow">Background</p>
+      <h2>Education &amp; recognition</h2>
+      <div class="edu-grid" style="margin-top:28px">
         <div class="box">
           <h3>Education</h3>
           <ul class="edu">
-            <li><b>MSc Business Analytics &amp; Big Data</b><span>IE Business School, Madrid · 2018</span></li>
-            <li><b>BSc Chemical Engineering</b><span>Cairo University · 2008</span></li>
+            <li><b><svg class="flag" viewBox="0 0 21 14" role="img" aria-label="Spain"><rect width="21" height="14" fill="#c60b1e"/><rect y="3.5" width="21" height="7" fill="#ffc400"/></svg>MSc Business Analytics &amp; Big Data</b><span>IE Business School, Madrid · 2018</span></li>
+            <li><b><svg class="flag" viewBox="0 0 21 14" role="img" aria-label="Egypt"><rect width="21" height="14" fill="#fff"/><rect width="21" height="4.67" fill="#ce1126"/><rect y="9.33" width="21" height="4.67" fill="#000"/><circle cx="10.5" cy="7" r="1.5" fill="#c09300"/></svg>BSc Chemical Engineering</b><span>Cairo University · 2008</span></li>
           </ul>
         </div>
         <div class="box">
           <h3>Recognition</h3>
           <ul class="edu">
-            <li><b>Winner, P&amp;G IT &amp; Business Hackathon</b><span>Southern Europe · 2017</span></li>
+            <li><b>Winner, P&amp;G Business Hackathon</b><span>Southern Europe · 2017</span></li>
             <li><b>Official Election Observer</b><span>Human Rights Watch · 2012</span></li>
           </ul>
-        </div>
         </div>
       </div>
     </div>
@@ -683,10 +683,10 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         <p class="eyebrow">The ask</p>
         <h2>Let's build <em>the next one.</em></h2>
         <ul class="ask-list">
+          <li>Entrepreneur in Residence</li>
           <li>CEO / COO / GM roles for a launch or scale-up</li>
           <li>Co-founding or operating partner on a venture</li>
-          <li>Advisory on ops, supply chain and unit economics</li>
-          <li>Egypt, UAE, GCC · on-site, hybrid or remote</li>
+          <li>Egypt, GCC, Africa · on-site, hybrid or remote</li>
         </ul>
         <div class="ask-ctas">
           <a class="btn btn-green" href="mailto:m.ayman.kh@gmail.com">
@@ -708,6 +708,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <a href="https://github.com/m-ayman-kh" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
+        <img class="qr" src="img/qr.svg" width="72" height="72" alt="QR code that opens m-ayman-kh.github.io" title="Scan to open this page">
       </div>
     </div>
   </section>
@@ -741,9 +742,9 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
   // q = the question as shown in the visitor's bubble, a = answer HTML, f = follow-up question keys.
   var A = {
     who: { q: 'Who are you, really?', f: ['results', 'why', 'week'],
-      a: '<p class="lead">I\u2019m Mohamed. 13+ years on the dark side of operations: long enough to know which problems are expensive. I build what didn\u2019t exist, fix the broken and improve the running.</p>' + ul([
+      a: '<p class="lead">I\u2019m Mohamed. 13+ years on the dark side of operations: long enough to know which problems are expensive.<br>I build what didn\u2019t exist, fix the broken and improve the running.</p>' + ul([
         'Delivery, SaaS, cloud kitchens, grocery e-commerce and marketplaces. Oil &amp; gas before that.',
-        'P&amp;L owner. Teams of <span class="num">260+</span>.',
+        'P&amp;L owner. Teams of <span class="num">320+</span>.',
         'I write the software my operations need. MSc in Business Analytics &amp; Big Data from IE Madrid, so the data part is not a hobby.']) },
     launched: { q: 'What have you launched?', f: ['yaga', 'foodics', 'foodlab'],
       a: '<p class="lead">What I have launched:</p>' + ul([
@@ -754,18 +755,16 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         '<b>Glovo:</b> launched new cities and built courier supply.']) },
     results: { q: 'Show me the numbers.', f: ['glovo', 'zahran', 'why'],
       a: '<p class="lead">Highlights, in numbers:</p>' + stats([
-        ['−38%', 'cost per order · Glovo'], ['+34%', 'GMV year on year · Zahran'], ['−28%', 'procurement &amp; waste · The Food Lab'],
-        ['200+', 'stores in 3 quarters · Foodics'], ['11%', 'of online sales from a new app in 6 months · Zahran'], ['260+', 'people led']]) },
+        ['−38%', 'cost per order · Glovo'], ['+34%', 'GMV YoY · Zahran'], ['−28%', 'procurement &amp; waste · The Food Lab'],
+        ['200+', 'stores in 3 quarters · Foodics'], ['11%', 'of online sales from a new app in 6 months · Zahran'], ['320+', 'people led']]) },
     building: { q: 'What are you building now?', f: ['flo', 'looking', 'skills'],
       a: '<p class="lead">By day, launching <b>Yaga</b> in Egypt. On the side, I write software:</p>' + ul([
-        '<b>FLO:</b> fleet-management SaaS for company cars and middle-mile trucks, with an AI layer that learns each company’s dispatch habits. It is live.',
-        '<b>EGX Desk:</b> my private real-time trading desk for the Egyptian Exchange.',
-        '<b>Date Mate:</b> a date-sugar brand in validation, export to the US first.']) +
+        '<b>FLO:</b> fleet-management SaaS for company cars and middle-mile trucks, with an AI layer that learns each company’s dispatch habits. It is live.']) +
          acts(btnFlo + '<a class="btn btn-ghost" href="#build">All projects</a>') },
     looking: { q: 'What are you looking for?', f: ['location', 'why', 'resume'],
       a: '<p class="lead">Let’s build the next one:</p>' + ul([
-        'CEO / COO / GM roles for a launch or scale-up', 'Co-founding or operating partner on a venture',
-        'Advisory on ops, supply chain and unit economics', 'Egypt, UAE, GCC · on-site, hybrid or remote']) +
+        'Entrepreneur in Residence', 'CEO / COO / GM roles for a launch or scale-up', 'Co-founding or operating partner on a venture',
+        'Egypt, GCC, Africa · on-site, hybrid or remote']) +
          acts('<a class="btn btn-green" href="mailto:' + EMAIL + '">Email me</a>' + btnCopy) },
     resume: { q: 'Resume, please.', f: ['looking', 'contact'],
       a: '<p class="lead">The one-page version. Everything here, minus the jokes:</p>' + acts(btnResume + btnLinkedIn + btnEmail) },
@@ -777,45 +776,41 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         '<b>I move the numbers.</b> −38% cost per order at Glovo, +34% GMV at Zahran, −28% waste at The Food Lab.',
         '<b>I build my own tools.</b> An in-house supply-chain system at The Food Lab, and FLO, a live SaaS I wrote myself.']) },
     location: { q: 'Where are you based?', f: ['looking', 'contact'],
-      a: '<p class="lead">Egypt and the UAE.</p>' + ul(['Open to roles in Egypt, the UAE and the wider GCC.', 'On-site, hybrid or remote.', 'Arabic and English.']) },
+      a: '<p class="lead">Egypt and the UAE.</p>' + ul(['Open to roles in Egypt, the GCC and Africa.', 'On-site, hybrid or remote.', 'Arabic and English.']) },
     yaga: { q: 'Tell me about Yaga.', f: ['zahran', 'looking'],
       a: '<p class="lead"><b>Yaga</b> · second-hand marketplace · Market Launcher, Jul 2026 – Current</p>' + ul([
-        'Launching Yaga in Egypt from zero: go-to-market, localization, pricing and unit economics.',
+        'Go-to-market, localization, pricing and unit economics.',
         'Building both sides: seeding sellers and listings, driving early buyer acquisition and activation.',
-        'Operations end to end (payments, logistics, CX) with <span class="num">100%</span> on-time delivery.']) },
+        'Operations end to end: payments integration, logistics and customer experience workflows.']) },
     zahran: { q: 'What did you do at Zahran?', f: ['foodlab', 'results'],
-      a: '<p class="lead"><b>Zahran</b> · grocery &amp; retail e-commerce · Sep 2024 – Jun 2026</p>' + stats([['+34%', 'GMV year on year'], ['11%', 'of online sales via the new app in 6 months'], ['27', 'branches + a DC in my supply chain']]) +
-         ul(['Built e-commerce from the ground up as Director of E-Commerce: operations, fulfillment, CX and growth.', 'Monthly online revenue consistently in the double-digit millions (EGP).', 'Promoted to Director of Supply Chain in Jan 2026: warehousing and replenishment for a distribution center and 27 branches.']) },
+      a: '<p class="lead"><b>Zahran</b> · grocery &amp; retail e-commerce · Sep 2024 – Jun 2026</p>' + stats([['+34%', 'GMV YoY'], ['+31%', 'app downloads MoM'], ['27', 'branches + distribution center in my supply chain']]) +
+         ul(['Built e-commerce from the ground up: operations, fulfillment, customer experience and growth.', 'Grew online revenue to double-digit millions of EGP every month.', 'Launched the Zahran app.', 'Promoted to Director of Supply Chain in Jan 2026: warehousing and replenishment for a distribution center and 27 branches.']) },
     foodlab: { q: 'What did you do at The Food Lab?', f: ['foodics', 'skills'],
-      a: '<p class="lead"><b>The Food Lab</b> · cloud kitchens · Oct 2021 – Aug 2024</p>' + stats([['1 → 5', 'garage kitchen to 5 cloud kitchens + central production'], ['−28%', 'procurement &amp; waste costs'], ['19', 'brands on my SOPs']]) +
-         ul(['Head, then Director of Operations; built all operations from scratch.', 'Designed and built an in-house supply-chain management system.', 'Led <span class="num">260+</span> people across operations, supply chain and CX.']) },
+      a: '<p class="lead"><b>The Food Lab</b> · cloud kitchens · Oct 2021 – Aug 2024</p>' + stats([['1 → 5', 'scaled to 5 cloud kitchens + central production'], ['−28%', 'procurement &amp; waste costs'], ['29', 'brands on my SOPs']]) +
+         ul(['Built operations from scratch: supply chain, customer experience, kitchen ops, middle- and last-mile logistics.', 'Designed and built an in-house supply chain management system.', 'Engineered all Operations frameworks and SOPs supporting <span class="num">29</span> brands.', 'Led <span class="num">320+</span> people across operations, supply chain and customer experience.']) },
     foodics: { q: 'What did you do at Foodics?', f: ['glovo', 'launched'],
       a: '<p class="lead"><b>Foodics</b> · point-of-sale SaaS · Country GM, Jul 2020 – Jul 2021</p>' +
-         ul(['Launched Foodics in Egypt and designed the go-to-market.', 'Built the outbound sales team from the ground up.', '<span class="num">200+</span> stores acquired in three quarters.']) },
+         ul(['Architected the go-to-market strategy for Egypt.', 'Built it to maximize ROI on every sale.', 'Drove demand generation to feed the sales pipeline.', 'Built the outbound sales team from the ground up.']) },
     glovo: { q: 'What did you do at Glovo?', f: ['foodics', 'halliburton'],
-      a: '<p class="lead"><b>Glovo</b> · last-mile delivery · Country Operations Manager, Jul 2019 – May 2020</p>' + stats([['−38%', 'cost per order'], ['+35%', 'fleet utilization'], ['−25%', 'delivery time'], ['−39%', 'cancellations']]) +
-         ul(['Owned country operations and unit economics; launched new cities.', 'Got there with data-driven dispatch, pricing and supply planning, and built the courier fleet organically.', 'Founded an immigrant-courier program.']) },
+      a: '<p class="lead"><b>Glovo</b> · last-mile delivery aggregator · Country Operations Manager, Jul 2019 – May 2020</p>' + stats([['−38%', 'cost per order'], ['+35%', 'fleet utilization'], ['−25%', 'delivery time'], ['−39%', 'cancellations']]) +
+         ul(['Ran the country’s operations and unit economics with a team of <span class="num">15</span>.', 'Expanded into new cities.', 'Made dispatch, pricing and supply planning data-driven, and built the models that keep operations healthy for the long run.', 'Grew the courier fleet organically. Launched an onboarding program for immigrant couriers.']) },
     halliburton: { q: 'What did you do at Halliburton?', f: ['education', 'army'],
       a: '<p class="lead"><b>Halliburton</b> · oil &amp; gas · Mar 2012 – Jul 2019</p>' +
-         ul(['From lab technician to engineer to business developer.', 'Designed and ran <span class="num">60+</span> frac, sand-control and stimulation jobs; trained 2 associate engineers.', 'Business development for production-enhancement solutions, with about <span class="num">70%</span> recovery on disputed debts.']) },
+         ul(['Designed and ran <span class="num">60+</span> frac jobs.', 'Took the SandTrap technology to market and pushed data-driven decisions in production enhancement.', 'Led bids and tenders, and recovered <span class="num">70%</span> of disputed debts.', 'Wrote the Eastern Desert fluids playbook.', 'Represented Halliburton at university student chapters.']) },
     army: { q: 'Tell me about the army years.', f: ['halliburton', 'why'],
-      a: '<p class="lead">First Lieutenant and Platoon Commander, Egyptian Armed Forces, 2008 – 2011.</p>' + ul(['Led a platoon of <span class="num">28</span> soldiers. My first team.']) },
+      a: '<p class="lead">First Lieutenant and Platoon Commander, Egyptian Armed Forces, 2008 – 2011.</p>' + ul(['Led a platoon of <span class="num">28</span> soldiers in missions, mentoring and orientation. My first team.', 'Got every new soldier aligned with the commanders’ plan.']) },
     education: { q: 'What did you study?', f: ['skills', 'who'],
-      a: ul(['<b>MSc Business Analytics &amp; Big Data</b>, IE Business School, Madrid (2018).', '<b>BSc Chemical Engineering</b>, Cairo University (2008).', 'Winner, <b>P&amp;G IT &amp; Business Hackathon</b>, Southern Europe (2017).']) },
+      a: ul(['<b>MSc Business Analytics &amp; Big Data</b>, IE Business School, Madrid (2018).', '<b>BSc Chemical Engineering</b>, Cairo University (2008).', 'Winner, <b>P&amp;G Business Hackathon</b>, Southern Europe (2017).']) },
     skills: { q: 'What are your skills?', f: ['building', 'education'],
-      a: ul(['<b>Leadership:</b> P&amp;L ownership, go-to-market, digital transformation, agile operating frameworks.',
-             '<b>Operations:</b> supply chain, e-commerce &amp; fulfillment, last-mile delivery, unit economics, CX, process engineering.',
-             '<b>Tech &amp; data:</b> Python, R, SQL, machine learning, Tableau, AI tools and agents.']) },
+      a: ul(['<b>Leadership:</b> P&amp;L ownership, go-to-market, digital transformation, agile frameworks, team building, cross-functional leadership.',
+             '<b>Operations:</b> supply chain, e-commerce &amp; fulfillment, last-mile delivery, SaaS, unit economics, customer experience, process engineering.',
+             '<b>Tech &amp; data:</b> AI tools and agents, Python, R, SQL, machine learning, Tableau, Google Workspace.']) },
     flo: { q: 'Tell me about FLO.', f: ['building', 'skills'],
       a: '<p class="lead"><b>FLO</b> is a fleet-management SaaS I designed and coded myself. I was the customer it is looking for.</p>' + ul([
         'For company cars and middle-mile trucks: requests and approvals, smart vehicle and driver assignment, truck load planning, proof of delivery.',
         'Live GPS tracking and a Telegram bot for drivers.', 'An AI layer learns each company’s dispatch habits and earns autopilot per trip type.']) + acts(btnFlo) },
-    island: { q: 'Deserted island. Who\u2019s coming?', f: ['future', 'life', 'who'],
-      a: '<p class="lead">Chuck Noland, and someone to question the raft.</p>' },
-    future: { q: 'What would 5-years-older you say?', f: ['island', 'week', 'building'],
+    future: { q: 'What would 5-years-older you say?', f: ['week', 'building'],
       a: '<p class="lead">Ship, Ayman, ship! Nobody remembers v1. Iteration is your moat, and compounding is the wonder.</p>' },
-    life: { q: 'The answer to life, the universe and everything?', f: ['island', 'future', 'who'],
-      a: '<p class="lead">Curiosity comes first. The other 41 follow.</p>' },
     week: { q: 'What does your week look like?', f: ['building', 'flo', 'future'],
       a: '<p class="lead">When I am building something new:</p>' + ul([
         '<b>Sunday:</b> listen to the customer.', '<b>Monday:</b> find the problems people actually pay for.', '<b>Tuesday:</b> on the code.',
@@ -824,7 +819,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
 
   var SHORT = { who: 'Who are you, really?', launched: 'What you launched', results: 'The numbers', building: 'Building now', looking: 'What you’re looking for',
     resume: 'Your resume', contact: 'How to reach you', why: 'Why you?', location: 'Where you’re based', yaga: 'Yaga', zahran: 'Zahran', foodlab: 'The Food Lab',
-    foodics: 'Foodics', glovo: 'Glovo', halliburton: 'Halliburton', army: 'Army years', education: 'Education', skills: 'Skills', flo: 'FLO', island: 'Deserted island?', future: '5-years-older you?', life: 'Meaning of life?', week: 'Your week?' };
+    foodics: 'Foodics', glovo: 'Glovo', halliburton: 'Halliburton', army: 'Army years', education: 'Education', skills: 'Skills', flo: 'FLO', future: '5-years-older you?', week: 'Your week?' };
 
   function scrollLog(){ log.scrollTop = log.scrollHeight; }
 
@@ -969,8 +964,8 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
   // shared question links skip the typing so the visitor sees the answer right away
   if (!reduce && !/^#ask=/.test(location.hash)){
     var parts = [
-      { t: "Hustler by nature. ", g: false },
-      { t: "Builder by instinct.", g: true }
+      { t: "Builder by nature. ", g: false },
+      { t: "Hustler by instinct.", g: true }
     ];
     var full = greet.textContent;
     greet.setAttribute('aria-label', full);

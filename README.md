@@ -19,5 +19,5 @@ The script copies the PDF in, sets "Resume updated <month year>" on the page, co
 ## Changing the page text
 Edit `index.html`, then `git add -A && git commit -m "..." && git push`.
 - Chat answers live in the `var A = {` block near the bottom of `index.html`. Each has `q` (question), `a` (answer) and `f` (follow-up chips).
-- Shareable question links: add `#ask=<key>` to the address, e.g. `https://m-ayman-kh.github.io/#ask=glovo`. Keys: who, results, launched, building, looking, resume, contact, why, location, yaga, zahran, foodlab, foodics, glovo, halliburton, army, education, skills, flo, island, future, life, week.
+- Shareable question links: add `#ask=<key>` to the address, e.g. `https://m-ayman-kh.github.io/#ask=glovo`. Keys: who, results, launched, building, looking, resume, contact, why, location, yaga, zahran, foodlab, foodics, glovo, halliburton, army, education, skills, flo, future, week.
 - `concepts/` holds the design drafts and is not published (it is in `.gitignore`).
