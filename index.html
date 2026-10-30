@@ -135,9 +135,6 @@ a{color:inherit}
 .chips-wrap{padding:12px 18px 18px;border-top:1px solid var(--line-d);background:rgba(0,0,0,.18)}
 .chips-label{font-size:12px;color:var(--mut-d);margin:0 0 10px;letter-spacing:.02em}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips.fun{margin-top:12px}
-.chips.fun .chip{border-style:dashed;border-color:rgba(255,255,255,.22);color:var(--mut-d)}
-.chips.fun .chip:hover{color:var(--txt-d);border-color:var(--green)}
 .chip{font:inherit;font-size:14px;font-weight:500;color:var(--txt-d);background:rgba(255,255,255,.05);border:1px solid rgba(47,227,138,.35);padding:9px 14px;border-radius:999px;cursor:pointer;transition:background .15s,border-color .15s,transform .15s,opacity .2s;text-align:left}
 .chip:hover{background:rgba(47,227,138,.12);border-color:var(--green);transform:translateY(-1px)}
 .chip[aria-pressed="true"]{opacity:.5;border-color:var(--line-d)}
@@ -310,8 +307,6 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
 .chat .chips-label{color:var(--mut)}
 .chat .chip{color:var(--txt);background:#f4f7f5;border-color:rgba(13,122,69,.35)}
 .chat .chip:hover{background:#e3f7ec;border-color:var(--green-2)}
-.chat .chips.fun .chip{border-color:#cfd7d2;color:var(--mut);background:#fff}
-.chat .chips.fun .chip:hover{color:var(--txt);border-color:var(--green-2)}
 .chat .av{border-color:rgba(22,184,106,.6)}
 
 
@@ -370,9 +365,9 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
       <aside class="me" aria-label="About Mohamed">
         <div class="portrait">
           <img src="img/khalifa-portrait.jpg" width="384" height="512" alt="Mohamed Ayman Khalifa">
-          <div class="tag"><strong>Mohamed Ayman Khalifa</strong><span>Builder &amp; entrepreneur</span></div>
+          <div class="tag"><strong>Mohamed Ayman Khalifa</strong><span>Builder &amp; Entrepreneur</span></div>
         </div>
-        <div class="mob-name"><strong>Mohamed Ayman Khalifa</strong><span>Builder &amp; entrepreneur</span></div>
+        <div class="mob-name"><strong>Mohamed Ayman Khalifa</strong><span>Builder &amp; Entrepreneur</span></div>
         <span class="status"><span class="dot" aria-hidden="true"></span>Open to leadership roles &amp; ventures</span>
         <div class="facts">
           <div><b>6</b><span>industries, one playbook</span></div>
@@ -401,12 +396,8 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <button class="chip" type="button" data-q="launched">What have you launched?</button>
             <button class="chip" type="button" data-q="building">What are you building now?</button>
             <button class="chip" type="button" data-q="looking">What are you looking for?</button>
-            <button class="chip" type="button" data-q="resume">Resume, please</button>
-          </div>
-          <p class="chips-label" style="margin-top:14px">Just for fun:</p>
-          <div class="chips fun">
-            <button class="chip" type="button" data-q="future">What would 5-years-older you say?</button>
             <button class="chip" type="button" data-q="week">What does your week look like?</button>
+            <button class="chip" type="button" data-q="resume">Resume, please</button>
           </div>
         </div>
       </div>
@@ -761,7 +752,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
       a: '<p class="lead">By day, launching <b>Yaga</b> in Egypt. On the side, I write software:</p>' + ul([
         '<b>FLO:</b> fleet-management SaaS for company cars and middle-mile trucks, with an AI layer that learns each company’s dispatch habits. It is live.']) +
          acts(btnFlo + '<a class="btn btn-ghost" href="#build">All projects</a>') },
-    looking: { q: 'What are you looking for?', f: ['location', 'why', 'resume'],
+    looking: { q: 'What are you looking for?', f: ['why', 'resume'],
       a: '<p class="lead">Let’s build the next one:</p>' + ul([
         'Entrepreneur in Residence', 'CEO / COO / GM roles for a launch or scale-up', 'Co-founding or operating partner on a venture',
         'Egypt, GCC, Africa · on-site, hybrid or remote']) +
@@ -775,8 +766,6 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         '<b>I start from zero.</b> Foodics Egypt, Zahran e-commerce, The Food Lab’s operations and now Yaga were all built from nothing.',
         '<b>I move the numbers.</b> −38% cost per order at Glovo, +34% GMV at Zahran, −28% waste at The Food Lab.',
         '<b>I build my own tools.</b> An in-house supply-chain system at The Food Lab, and FLO, a live SaaS I wrote myself.']) },
-    location: { q: 'Where are you based?', f: ['looking', 'contact'],
-      a: '<p class="lead">Egypt and the UAE.</p>' + ul(['Open to roles in Egypt, the GCC and Africa.', 'On-site, hybrid or remote.', 'Arabic and English.']) },
     yaga: { q: 'Tell me about Yaga.', f: ['zahran', 'looking'],
       a: '<p class="lead"><b>Yaga</b> · second-hand marketplace · Market Launcher, Jul 2026 – Current</p>' + ul([
         'Go-to-market, localization, pricing and unit economics.',
@@ -811,14 +800,14 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         'Live GPS tracking and a Telegram bot for drivers.', 'An AI layer learns each company’s dispatch habits and earns autopilot per trip type.']) + acts(btnFlo) },
     future: { q: 'What would 5-years-older you say?', f: ['week', 'building'],
       a: '<p class="lead">Ship, Ayman, ship! Nobody remembers v1. Iteration is your moat, and compounding is the wonder.</p>' },
-    week: { q: 'What does your week look like?', f: ['building', 'flo', 'future'],
+    week: { q: 'What does your week look like?', f: ['building', 'flo'],
       a: '<p class="lead">When I am building something new:</p>' + ul([
         '<b>Sunday:</b> listen to the customer.', '<b>Monday:</b> find the problems people actually pay for.', '<b>Tuesday:</b> on the code.',
         '<b>Wednesday:</b> kill it or double down.', '<b>Thursday:</b> iterate and take feedback.']) }
   };
 
   var SHORT = { who: 'Who are you, really?', launched: 'What you launched', results: 'The numbers', building: 'Building now', looking: 'What you’re looking for',
-    resume: 'Your resume', contact: 'How to reach you', why: 'Why you?', location: 'Where you’re based', yaga: 'Yaga', zahran: 'Zahran', foodlab: 'The Food Lab',
+    resume: 'Your resume', contact: 'How to reach you', why: 'Why you?', yaga: 'Yaga', zahran: 'Zahran', foodlab: 'The Food Lab',
     foodics: 'Foodics', glovo: 'Glovo', halliburton: 'Halliburton', army: 'Army years', education: 'Education', skills: 'Skills', flo: 'FLO', future: '5-years-older you?', week: 'Your week?' };
 
   function scrollLog(){ log.scrollTop = log.scrollHeight; }
