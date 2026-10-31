@@ -232,24 +232,22 @@ h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.1;margin:0
 /* Ask */
 .ask{background:radial-gradient(900px 500px at 100% 0,rgba(47,227,138,.18),transparent 60%),var(--ink);color:var(--txt-d)}
 .ask-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
-@media(min-width:900px){.ask-grid{grid-template-columns:1.2fr 1fr;gap:56px}}
+.qr-box{display:flex;align-items:center;gap:10px}
+.foot-row{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .ask .eyebrow{color:var(--green)}
 .ask h2{font-size:clamp(34px,5.5vw,60px)}
 .ask h2 em{font-style:normal;color:var(--green)}
 .ask-list{list-style:none;margin:20px 0 28px;padding:0;display:flex;flex-direction:column;gap:12px}
 .ask-list li{display:flex;gap:12px;font-size:17px;align-items:flex-start}
 .ask-list li::before{content:"";flex:none;width:20px;height:20px;margin-top:3px;border-radius:6px;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%2304130b' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
-.ask-ctas{display:flex;flex-wrap:wrap;gap:10px}
-.ask-card{background:var(--ink-3);border:1px solid var(--line-d);border-radius:24px;padding:22px;display:flex;gap:16px;align-items:center;box-shadow:var(--shadow)}
-.ask-card img{width:96px;height:96px;border-radius:50%;object-fit:cover;flex:none;border:3px solid rgba(47,227,138,.5)}
-.ask-card p{margin:0;color:#c6d4cc;font-size:15px}
-.ask-card p b{color:#fff;display:block;font-size:18px;margin-bottom:4px}
-.ask-card img.qr{width:72px;height:72px;margin-left:auto;background:#fff;padding:6px;border:0;border-radius:10px;object-fit:contain;box-sizing:border-box}
-@media(max-width:559px){.ask-card img.qr{display:none}}
-@media(min-width:900px) and (max-width:1099px){.ask-card img:not(.qr){width:72px;height:72px}}
-.socials{display:flex;gap:14px;margin-top:10px;flex-wrap:wrap}
-.socials a{color:var(--green);font-weight:600;font-size:14px;text-decoration:none}
-.socials a:hover{text-decoration:underline}
+.ask-list li.loc::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z' fill='%2304130b'/%3E%3Ccircle cx='12' cy='9' r='2.6' fill='%232fe38a'/%3E%3C/svg%3E")}
+.ask-ctas{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+.qr-box .qr{position:relative;width:72px;height:72px;flex:none;background:#fff;padding:6px;border-radius:10px;box-sizing:border-box}
+.qr-box .qr img{display:block;width:100%;height:100%}
+.qr-box p{text-align:right;margin:0;font-size:12.5px;line-height:1.35;color:#c6d4cc}
+.qr-box p b{display:block;color:#fff;font-size:13.5px}
+@media(max-width:559px){.qr-box{display:none}}
 footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;border-top:1px solid var(--line-d)}
 
 
@@ -527,7 +525,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
   <section class="projects" id="build">
     <div class="wrap">
       <p class="eyebrow">What I build</p>
-      <h2>I also write the software</h2>
+      <h2>Projects</h2>
       <p class="sub">Side projects I design and code myself.</p>
       <div class="pgrid">
         <article class="proj feature flo">
@@ -653,8 +651,8 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         <div class="box">
           <h3>Education</h3>
           <ul class="edu">
-            <li><b><svg class="flag" viewBox="0 0 21 14" role="img" aria-label="Spain"><rect width="21" height="14" fill="#c60b1e"/><rect y="3.5" width="21" height="7" fill="#ffc400"/></svg>MSc Business Analytics &amp; Big Data</b><span>IE Business School, Madrid · 2018</span></li>
-            <li><b><svg class="flag" viewBox="0 0 21 14" role="img" aria-label="Egypt"><rect width="21" height="14" fill="#fff"/><rect width="21" height="4.67" fill="#ce1126"/><rect y="9.33" width="21" height="4.67" fill="#000"/><circle cx="10.5" cy="7" r="1.5" fill="#c09300"/></svg>BSc Chemical Engineering</b><span>Cairo University · 2008</span></li>
+            <li><b>MSc, Business Analytics &amp; Big Data</b><span><svg class="flag" viewBox="0 0 21 14" role="img" aria-label="Spain"><rect width="21" height="14" fill="#c60b1e"/><rect y="3.5" width="21" height="7" fill="#ffc400"/></svg>IE Business School, Madrid · 2018</span></li>
+            <li><b>BSc, Chemical Engineering</b><span><svg class="flag" viewBox="0 0 21 14" role="img" aria-label="Egypt"><rect width="21" height="14" fill="#fff"/><rect width="21" height="4.67" fill="#ce1126"/><rect y="9.33" width="21" height="4.67" fill="#000"/><circle cx="10.5" cy="7" r="1.5" fill="#c09300"/></svg>Cairo University · 2008</span></li>
           </ul>
         </div>
         <div class="box">
@@ -677,36 +675,43 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
           <li>Entrepreneur in Residence</li>
           <li>CEO / COO / GM roles for a launch or scale-up</li>
           <li>Co-founding or operating partner on a venture</li>
-          <li>Egypt, GCC, Africa · on-site, hybrid or remote</li>
+          <li class="loc">Egypt, GCC, Africa · on-site, hybrid or remote</li>
         </ul>
         <div class="ask-ctas">
           <a class="btn btn-green" href="mailto:m.ayman.kh@gmail.com">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
             m.ayman.kh@gmail.com
           </a>
+          <a class="btn btn-ghost" href="tel:+201117796665">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            +20 111 779 6665
+          </a>
           <a class="btn btn-ghost" href="resume/Mohamed_Khalifa_Resume.pdf" download>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
             Download resume
           </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/i-am-khalifa/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/m-ayman-kh" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
         </div>
-      </div>
-      <div class="ask-card">
-        <img src="img/khalifa-square.jpg" width="512" height="512" alt="Mohamed Ayman Khalifa">
-        <div>
-          <p><b>Mohamed Ayman Khalifa</b>Open to leadership roles and ventures.</p>
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/i-am-khalifa/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/m-ayman-kh" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-        <img class="qr" src="img/qr.svg" width="72" height="72" alt="QR code that opens m-ayman-kh.github.io" title="Scan to open this page">
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">© Mohamed Ayman Khalifa · Resume updated <span id="resume-date">October 2026</span></div>
+  <div class="wrap foot-row">
+    <div>© Mohamed Ayman Khalifa · Resume updated <span id="resume-date">October 2026</span></div>
+    <div class="qr-box">
+      <p><b>Scan for my page</b>m-ayman-kh.github.io</p>
+      <div class="qr"><img src="img/qr.svg" width="72" height="72" alt="QR code that opens Mohamed Khalifa's page, m-ayman-kh.github.io"></div>
+    </div>
+  </div>
 </footer>
 
 <script>
@@ -760,7 +765,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
     resume: { q: 'Resume, please.', f: ['looking', 'contact'],
       a: '<p class="lead">The one-page version. Everything here, minus the jokes:</p>' + acts(btnResume + btnLinkedIn + btnEmail) },
     contact: { q: 'How can I reach you?', f: ['looking', 'resume'],
-      a: '<p class="lead">Email is the best way to reach me.</p>' + acts('<a class="btn btn-green" href="mailto:' + EMAIL + '">' + EMAIL + '</a>' + btnCopy + btnLinkedIn) },
+      a: '<p class="lead">Email is the best way to reach me.</p>' + acts('<a class="btn btn-green" href="mailto:' + EMAIL + '">' + EMAIL + '</a>' + btnCopy + '<a class="btn btn-ghost" href="tel:+201117796665">+20 111 779 6665</a>' + btnLinkedIn) },
     why: { q: 'Why you?', f: ['results', 'looking', 'resume'],
       a: '<p class="lead">Three things, all on the record:</p>' + ul([
         '<b>I start from zero.</b> Foodics Egypt, Zahran e-commerce, The Food Lab’s operations and now Yaga were all built from nothing.',
@@ -789,7 +794,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
     army: { q: 'Tell me about the army years.', f: ['halliburton', 'why'],
       a: '<p class="lead">First Lieutenant and Platoon Commander, Egyptian Armed Forces, 2008 – 2011.</p>' + ul(['Led a platoon of <span class="num">28</span> soldiers in missions, mentoring and orientation. My first team.', 'Got every new soldier aligned with the commanders’ plan.']) },
     education: { q: 'What did you study?', f: ['skills', 'who'],
-      a: ul(['<b>MSc Business Analytics &amp; Big Data</b>, IE Business School, Madrid (2018).', '<b>BSc Chemical Engineering</b>, Cairo University (2008).', 'Winner, <b>P&amp;G Business Hackathon</b>, Southern Europe (2017).']) },
+      a: ul(['<b>MSc, Business Analytics &amp; Big Data</b>, IE Business School, Madrid (2018).', '<b>BSc, Chemical Engineering</b>, Cairo University (2008).', 'Winner, <b>P&amp;G Business Hackathon</b>, Southern Europe (2017).']) },
     skills: { q: 'What are your skills?', f: ['building', 'education'],
       a: ul(['<b>Leadership:</b> P&amp;L ownership, go-to-market, digital transformation, agile frameworks, team building, cross-functional leadership.',
              '<b>Operations:</b> supply chain, e-commerce &amp; fulfillment, last-mile delivery, SaaS, unit economics, customer experience, process engineering.',
