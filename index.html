@@ -60,11 +60,19 @@ a{color:inherit}
 /* ---------- HERO ---------- */
 .hero{background:radial-gradient(1200px 600px at 85% -10%,rgba(47,227,138,.16),transparent 60%),radial-gradient(800px 500px at -10% 110%,rgba(47,227,138,.08),transparent 60%),var(--ink);color:var(--txt-d);padding-bottom:72px;position:relative}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
-.brand{font-weight:800;letter-spacing:-.01em;font-size:16px;text-decoration:none}
-.brand b{color:var(--green)}
 .nav-links{display:flex;gap:8px;align-items:center}
 .nav-links a.txt{color:var(--mut-d);text-decoration:none;font-size:14px;font-weight:500;padding:8px 10px}
 .nav-links a.txt:hover{color:#fff}
+.ticker{flex:1;min-width:0;margin-right:64px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.ticker-move{display:flex;width:max-content;animation:tick 62s linear infinite}
+.ticker:hover .ticker-move{animation-play-state:paused}
+.ticker ul{display:flex;list-style:none;margin:0;padding:0}
+.ticker li{display:flex;align-items:center;gap:6px;padding-right:26px;white-space:nowrap;font:500 12.5px "JetBrains Mono",monospace;color:#9fb0a7}
+.ticker li i{font-style:normal;font-size:9px;color:var(--green)}
+.ticker li b{color:var(--green);font-weight:600}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.ticker-move{animation:none}}
+@media(max-width:899px){.ticker{margin-right:20px}}
 @media(max-width:700px){.nav-links a.txt{display:none}.nav .btn{padding:9px 14px;font-size:14px}}
 
 .hero-grid{display:grid;grid-template-columns:1fr;gap:36px;padding-top:28px}
@@ -344,8 +352,10 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
 
 <header class="hero">
   <div class="wrap">
-    <nav class="nav" aria-label="Main">
-      <a class="brand" href="#top" id="top">Mohamed <b>Khalifa</b></a>
+    <nav class="nav" id="top" aria-label="Main">
+      <div class="ticker" role="img" aria-label="Career highlights: GMV up 34%, cost per order down 38%, 200+ stores, team of 320+, cancellations down 39%">
+        <div class="ticker-move"><ul><li><i>▲</i>GMV <b>+34%</b></li><li><i>▼</i>Cost per order <b>−38%</b></li><li><i>▲</i>Stores <b>200+</b></li><li><i>▲</i>Team <b>320+</b></li><li><i>▲</i>App downloads MoM <b>+31%</b></li><li><i>▼</i>Cancellations <b>−39%</b></li><li><i>▲</i>Cloud kitchens <b>1 → 5</b></li><li><i>▲</i>Fleet utilization <b>+35%</b></li><li><i>▲</i>Online sales via app <b>11%</b></li><li><i>▼</i>Delivery time <b>−25%</b></li><li><i>▲</i>Branches <b>27</b></li><li><i>▼</i>Procurement &amp; waste <b>−28%</b></li><li><i>▲</i>Brands <b>29</b></li><li><i>▲</i>Debt recovery <b>70%</b></li><li><i>▲</i>Frac jobs <b>60+</b></li><li><i>▲</i>Launches <b>4×</b></li><li><i>▲</i>Industries <b>6</b></li><li><i>▲</i>Years <b>13+</b></li></ul><ul aria-hidden="true"><li><i>▲</i>GMV <b>+34%</b></li><li><i>▼</i>Cost per order <b>−38%</b></li><li><i>▲</i>Stores <b>200+</b></li><li><i>▲</i>Team <b>320+</b></li><li><i>▲</i>App downloads MoM <b>+31%</b></li><li><i>▼</i>Cancellations <b>−39%</b></li><li><i>▲</i>Cloud kitchens <b>1 → 5</b></li><li><i>▲</i>Fleet utilization <b>+35%</b></li><li><i>▲</i>Online sales via app <b>11%</b></li><li><i>▼</i>Delivery time <b>−25%</b></li><li><i>▲</i>Branches <b>27</b></li><li><i>▼</i>Procurement &amp; waste <b>−28%</b></li><li><i>▲</i>Brands <b>29</b></li><li><i>▲</i>Debt recovery <b>70%</b></li><li><i>▲</i>Frac jobs <b>60+</b></li><li><i>▲</i>Launches <b>4×</b></li><li><i>▲</i>Industries <b>6</b></li><li><i>▲</i>Years <b>13+</b></li></ul></div>
+      </div>
       <div class="nav-links">
         <a class="txt" href="#experience">Experience</a>
         <a class="txt" href="#build">Projects</a>
@@ -392,10 +402,7 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
             <button class="chip" type="button" data-q="who">Who are you, really?</button>
             <button class="chip" type="button" data-q="results">Show me the numbers</button>
             <button class="chip" type="button" data-q="launched">What have you launched?</button>
-            <button class="chip" type="button" data-q="building">What are you building now?</button>
             <button class="chip" type="button" data-q="looking">What are you looking for?</button>
-            <button class="chip" type="button" data-q="week">What does your week look like?</button>
-            <button class="chip" type="button" data-q="resume">Resume, please</button>
           </div>
         </div>
       </div>
@@ -588,10 +595,10 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
           </div>
         </article>
         <article class="proj">
-          <span class="ptag">Civic · free</span>
-          <h3>El Nozha Parking Map</h3>
-          <p>A free bilingual QR-code parking map for a Cairo district.</p>
-          <a class="plink" href="https://m-ayman-kh.github.io/nozha-parking/" target="_blank" rel="noopener">Open the map →</a>
+          <span class="ptag">Automation</span>
+          <h3>Personal AI agents</h3>
+          <p>Scheduled agents that work for me: a homework organizer and market briefs.</p>
+          <span class="plink muted">Private</span>
         </article>
         <article class="proj">
           <span class="ptag">Finance app</span>
@@ -600,10 +607,10 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
           <span class="plink muted">Private</span>
         </article>
         <article class="proj">
-          <span class="ptag">Automation</span>
-          <h3>Personal AI agents</h3>
-          <p>Scheduled agents that work for me: a homework organizer and market briefs.</p>
-          <span class="plink muted">Private</span>
+          <span class="ptag">Civic · free</span>
+          <h3>El Nozha Parking Map</h3>
+          <p>A free bilingual QR-code parking map for a Cairo district.</p>
+          <a class="plink" href="https://m-ayman-kh.github.io/nozha-parking/" target="_blank" rel="noopener">Open the map →</a>
         </article>
         <article class="proj">
           <span class="ptag">Data science</span>
@@ -737,19 +744,19 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
   // Every answer uses only facts from the resume, LinkedIn and the project notes.
   // q = the question as shown in the visitor's bubble, a = answer HTML, f = follow-up question keys.
   var A = {
-    who: { q: 'Who are you, really?', f: ['results', 'why', 'week'],
+    who: { q: 'Who are you, really?', f: ['results', 'why', 'building', 'week'],
       a: '<p class="lead">I\u2019m Mohamed. 13+ years on the dark side of operations: long enough to know which problems are expensive.<br>I build what didn\u2019t exist, fix the broken and improve the running.</p>' + ul([
         'Delivery, SaaS, cloud kitchens, grocery e-commerce and marketplaces. Oil &amp; gas before that.',
         'P&amp;L owner. Teams of <span class="num">320+</span>.',
         'I write the software my operations need. MSc in Business Analytics &amp; Big Data from IE Madrid, so the data part is not a hobby.']) },
-    launched: { q: 'What have you launched?', f: ['yaga', 'foodics', 'foodlab'],
+    launched: { q: 'What have you launched?', f: ['yaga', 'foodics', 'foodlab', 'building'],
       a: '<p class="lead">What I have launched:</p>' + ul([
         '<b>Yaga, Egypt (2026, now):</b> launching a second-hand marketplace from zero, both sellers and buyers.',
         '<b>Zahran:</b> built grocery e-commerce from the ground up, then launched the mobile app.',
         '<b>The Food Lab:</b> one garage kitchen to <span class="num">5</span> cloud kitchens and a central production facility.',
         '<b>Foodics, Egypt:</b> launched the country, <span class="num">200+</span> stores in three quarters.',
         '<b>Glovo:</b> launched new cities and built courier supply.']) },
-    results: { q: 'Show me the numbers.', f: ['glovo', 'zahran', 'why'],
+    results: { q: 'Show me the numbers.', f: ['glovo', 'zahran', 'why', 'resume'],
       a: '<p class="lead">Highlights, in numbers:</p>' + stats([
         ['−38%', 'cost per order · Glovo'], ['+34%', 'GMV YoY · Zahran'], ['−28%', 'procurement &amp; waste · The Food Lab'],
         ['200+', 'stores in 3 quarters · Foodics'], ['11%', 'of online sales from a new app in 6 months · Zahran'], ['320+', 'people led']]) },
@@ -811,9 +818,9 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         '<b>Wednesday:</b> kill it or double down.', '<b>Thursday:</b> iterate and take feedback.']) }
   };
 
-  var SHORT = { who: 'Who are you, really?', launched: 'What you launched', results: 'The numbers', building: 'Building now', looking: 'What you’re looking for',
+  var SHORT = { who: 'Who are you, really?', launched: 'What you launched', results: 'The numbers', building: 'What you’re building now', looking: 'What you’re looking for',
     resume: 'Your resume', contact: 'How to reach you', why: 'Why you?', yaga: 'Yaga', zahran: 'Zahran', foodlab: 'The Food Lab',
-    foodics: 'Foodics', glovo: 'Glovo', halliburton: 'Halliburton', army: 'Army years', education: 'Education', skills: 'Skills', flo: 'FLO', future: '5-years-older you?', week: 'Your week?' };
+    foodics: 'Foodics', glovo: 'Glovo', halliburton: 'Halliburton', army: 'Army years', education: 'Education', skills: 'Skills', flo: 'FLO', future: '5-years-older you?', week: 'Your week' };
 
   function scrollLog(){ log.scrollTop = log.scrollHeight; }
 
