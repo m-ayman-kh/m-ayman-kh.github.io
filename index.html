@@ -321,9 +321,9 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
 .proj.flo h3{font-size:23px}
 @media(min-width:860px){.proj.flo{grid-template-columns:1fr 1fr;align-items:center;gap:32px;padding:20px}.flo-viz{aspect-ratio:3/2}}
 .flo-text{display:flex;flex-direction:column;gap:10px;min-width:0}
-.flo-list{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
-.flo-list li{position:relative;padding-left:20px;color:#d6e2db;font-size:15px}
-.flo-list li::before{content:"";position:absolute;left:0;top:.5em;width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+.flo-mods{list-style:none;margin:6px 0 2px;padding:0;display:flex;flex-direction:column;gap:7px}
+.flo-mods li{display:flex;align-items:baseline;gap:10px;font-size:14px;color:#9fb0a7}
+.flo-mods b{flex:0 0 92px;color:var(--green);font:600 12.5px "JetBrains Mono",monospace;letter-spacing:.02em}
 .flo-viz{position:relative;border-radius:16px;overflow:hidden;min-height:240px;border:1px solid rgba(255,255,255,.08);background:#0d1612}
 .flo-viz svg{position:absolute;inset:0;width:100%;height:100%}
 .flo-viz .pin text{font:700 9px Inter,sans-serif;fill:#d6f5e3}
@@ -539,11 +539,14 @@ footer{background:var(--ink);color:var(--mut-d);font-size:13px;padding:22px 0;bo
         <article class="proj feature flo">
           <div class="flo-text">
             <span class="ptag">Live · B2B SaaS · AI</span>
-            <h3>FLO: fleet management</h3>
-            <ul class="flo-list">
-              <li>Autonomous fleet decisions</li>
-              <li>Handles the routine on its own</li>
-              <li>Live fleet visibility</li>
+            <h3>FLO: your fleet, on autopilot.</h3>
+            <p>Everything that moves, on one AI platform.</p>
+            <ul class="flo-mods" aria-label="FLO services">
+              <li><b>Autopilot</b>decides car, driver, load</li>
+              <li><b>Copilot</b>ask it, give it goals</li>
+              <li><b>Handover</b>live link, signed proof</li>
+              <li><b>Economics</b>use, upkeep, cost</li>
+              <li><b>Connect</b>forecasts, daily brief</li>
             </ul>
             <a class="plink" href="https://fleet.flo.deno.net/" target="_blank" rel="noopener">Open FLO →</a>
           </div>
